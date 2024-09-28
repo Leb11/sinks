@@ -1,35 +1,124 @@
-/* Outdated CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
-h1 {
-    margin: 0;
+header {
+    background-color: #4b4b4b; 
+    text-align: center;
+    padding: 20px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+nav {
+    background-color: #333333; 
+    color: white;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+nav ul {
+    flex-direction: column;
+    text-align: center;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+nav a {
+    color: #cccccc; 
+    text-decoration: none;
+    font-weight: bold;
 }
 
-img {
+nav a:hover {
+    color: #f0c040; 
+}
+
+main {
+    grid-template-columns: 1fr;
+    background-color: #e6e6e6;
+}
+
+section img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+footer {
+    background-color: #4b4b4b;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero {
+    background-image: url('images/hero-sink.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f0c040;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e0b030; 
+}
+
+.about-sinks, .types-of-sinks, .features-benefits {
+    background-color: #4b4b4b;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.about-sinks h2, .types-of-sinks h2, .features-benefits h2 {
+    color: #f0c040; 
+}
+
+.types-of-sinks, .about-sinks, .features-benefits {
+    background-color: #4b4b4b;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.types-of-sinks h2, .about-sinks h2, .features-benefits h2 {
+    color: #f0c040; 
 }
